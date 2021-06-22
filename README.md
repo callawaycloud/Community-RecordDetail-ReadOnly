@@ -1,18 +1,46 @@
-# Salesforce DX Project: Next Steps
+# Record Detail - Read Only
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+A simple component that is used in Experience Cloud to display read-only layouts.
 
-## How Do You Plan to Deploy Your Changes?
+![Imgur](https://i.imgur.com/rQo2Gyy.png)
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+## 📦 Install
 
-## Configure Your Salesforce DX Project
+**via sfdx-cli**
+`sfdx force:package:install --package 04t5e000000dcJkAAI -u your@org.user`
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+**via url**
+login and navigate to [`/packaging/installPackage.apexp?p0=04t5e000000dcJkAAI`](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t5e000000dcJkAAI). Choose `Install for: Admin Only`.
 
-## Read All About It
+### Upgrading
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+This project has been updated to a [namespaced unlocked package](https://github.com/ChuckJonas/Salesforce-Environment-Vars/issues/3).  If you installed before the namespace was added, and want to stay up-to-sync with the latest improvements, then please follow the [manual migration process](https://github.com/ChuckJonas/Salesforce-Environment-Vars/blob/master/docs/UPGRADE-FROM-UNPACKAGED.md)!
+
+## 🔨 Usage
+
+1. Go to your community in Experience cloud
+2. Go to a record detail page
+3. Drag the component ``Record Detail - Read Only View`` onto the page
+4. Fill in the component parameters as needed
+
+## ✨Features
+
+### Specify your own fields and avoid page layouts
+
+- Depending on the object, some page layouts require specific fields to be present. You can now specify your own fields to be displayed.
+
+### Density
+
+- You have the ability to toggle between different types of page densities
+
+### Columns
+
+- You have the ability to choose between 1 and 3 columns
+
+### Blank/Filler Spaces 
+
+- If you want a blank position, enter a dummy value like ``null``
+
+![Imgur](https://i.imgur.com/XN0tDRk.png)
+
+** Powered by ** [Callaway Cloud Consulting](https://www.callawaycloud.com/)

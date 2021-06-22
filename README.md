@@ -12,10 +12,6 @@ A simple component that is used in Experience Cloud to display read-only layouts
 **via url**
 login and navigate to [`/packaging/installPackage.apexp?p0=04t5e000000dcJkAAI`](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t5e000000dcJkAAI). Choose `Install for: Admin Only`.
 
-### Upgrading
-
-This project has been updated to a [namespaced unlocked package](https://github.com/ChuckJonas/Salesforce-Environment-Vars/issues/3).  If you installed before the namespace was added, and want to stay up-to-sync with the latest improvements, then please follow the [manual migration process](https://github.com/ChuckJonas/Salesforce-Environment-Vars/blob/master/docs/UPGRADE-FROM-UNPACKAGED.md)!
-
 ## 🔨 Usage
 
 1. Go to your community in Experience cloud

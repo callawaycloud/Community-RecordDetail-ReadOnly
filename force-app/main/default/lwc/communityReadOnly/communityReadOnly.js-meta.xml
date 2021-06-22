@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Record Detail - Read Only View</masterLabel>
+    <description>This component is used to display a read-only layout of a record.</description>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="recordId" label="Record Id" type="String" default="{!recordId}" description="The Id of the record we will pull data from." required="true" />
+            <property name="objectApiName" label="Object API Name" type="String" placeholder="Case" description="The API Name of the object." required="true" />
+            <property name="fieldApiNames" label="Field API Names" type="String" placeholder="Subject;Description" description="A semicolon separated list of Field API Names." required="true" />
+            <property name="density" label="Density" type="String" default="auto" datasource="auto,comfy,compact" description="Choose how the layout should be rendered." required="true" />
+            <property name="columnsToDisplay" label="Columns to Display" type="String" default="2" datasource="1,2,3" description="Specify the amount of columns to display." required="true" />
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>
